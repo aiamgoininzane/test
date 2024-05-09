@@ -1,0 +1,337 @@
+body {
+  font-family:"Fira Sans", sans-serif;
+  font-size:18px;
+  background-color:#0e0f12;
+}
+
+img.bgOMG {
+  min-height: 100%;
+  min-width: 1024px;
+	
+  width: 100%;
+  height: auto;
+	
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.bgOMG {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+.stuffBody {
+  background-color:#e3e3e3;
+  color:black;
+}
+
+.footer {
+  width: 615px;
+    color: #555555;
+  /*/	background-color: #76C6;*/
+}
+
+#buttoff {
+  text-align: right;
+}
+
+#buttoff:hover {
+  cursor: pointer;
+}
+
+hr {
+  color:white;
+}
+/*Styles a div called .PAGE that encompasses 
+everything, constrains page width and centers content*/
+.PAGE {
+  margin: 0 auto;
+  max-width:85%;
+  color:white;
+}
+
+/*Main header bar style. Avoid changes.*/
+#headerbarFull {
+  margin-top:35px;
+  margin-bottom:10px;
+  min-height:100px;
+  width:600px;
+  margin:0 auto;
+}
+/*Coolzone banner image, defining its size*/
+#bannerimg {
+  margin-bottom:-35px;
+  font-size:128px;
+  font-family: "Astloch", cursive;
+  color:white;
+  }
+#bannerimg > a {color:#286CB5; text-decoration:none;}
+#headerbarFull > h2 {
+  margin:0 auto;
+  text-align: center;
+  font-size:50px;
+  color:white;
+  font-weight:normal;
+  font-family:"Inconsolata", monospace;
+}
+#headerbarFull > h3 {
+  margin:0 auto;
+  text-align: center;
+  font-size:32px;
+  color:white;
+  font-weight:normal;
+  font-family:"Astloch", cursive;
+}
+.respoIf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*LINK BAR STUFF*/
+
+/*Outer container for LinkBar. It centers the whole thing regardless of the number
+of links or number of rows of links.*/
+.LinkBar {
+  display:flex;
+  text-align:center;
+  margin:0 auto;    
+}
+
+/*Defines the aesthetic of every link (the outer boxes are defined as part of the <a>
+elements)*/
+.LinkBar a {
+  text-decoration:none;
+  font-family:"Inconsolata", monospace;
+  font-weight:normal;
+  color:white;
+  text-align:center;
+  position:relative;
+  font-size:30px;
+  z-index:999;
+  
+  float:left;
+  
+  -webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
+  transition: color 0.5s, background-color 0.5s;   
+  
+  padding:-5px 20px 4px 20px;
+  margin: 5px 40px 5px 5px;
+}
+
+.LinkBar a:hover { color:#286CB5; }
+
+.LinkBar.InPgLink a{ color:white; }
+.LinkBar.InPgLink a:visited{color:white;}
+.LinkBar.InPgLink a:hover { color:#3bff00; }
+/*LINK BAR STUFF*/
+
+/*Main Content Column Stlye; avoid changing the technical stuff.*/
+.ContentCol {
+  padding:20px 15px 20px 15px;
+  margin: 0 auto;
+  text-align:justify;
+  color:#e5e5e5;
+  width:600px;
+  font-family:"Fira Sans", sans-serif;
+}
+.ContentCol label       { padding-right:10px; }
+.ContentCol label:hover { text-decoration:underline; }
+.ContentCol h2 {
+  float:right;
+  width:100%;
+  font-size:32px;
+  font-weight:normal;
+  margin: 0;
+  margin-right:3px;
+  padding-left:10px;
+  text-align:left;
+  color:white;
+}
+.ContentCol p {
+  font-size:18px;
+  font-family:"Fira Sans", sans-serif;
+  line-height:1.55;
+  color:#cfcccc;
+  
+}
+.ContentCol a {color:#0080ff;}
+.ContentCol img {display:inherit; margin:0 auto;}
+
+.stuffCol {
+  border-left:dashed 1px black;
+  border-top: dashed 1px black;
+  color:black;
+}
+.stuffCol h2 {color:black;}
+.stuffCol p {color:black;}
+.stuffCol a {color:blue;}
+
+.StuffTable {
+  border:none;
+  font-size:25px;
+  width:100%;
+}
+
+.stuffCol .addit  {
+  background-color:rgba(0, 46, 0, 0.1);
+  color:#1b4d1b;
+  font-family:"Inconsolata", monospace;
+}
+
+/*Handles hanging indents for bibliography sections*/
+.bibliography {
+  display:grid;
+  grid-template-columns:1fr fit-content(98%);
+  gap: 5px;
+}
+
+#blog .ContentCol {
+  width:50vw;
+  padding:0px;}
+
+#blog .ContentCol h1 { 
+  width:100%; 
+  margin:3px; 
+  /*padding-left:10px;*/
+  font-family:"Inconsolata", monospace;
+  border-bottom:solid;
+  border-width:1px;
+  color:#286CB5;
+}
+#blog .ContentCol h2 {
+  font-family:"Inconsolata", monospace;
+  font-size:32px; 
+  font-weight:700;
+  margin-bottom:5px;
+  border:none;
+  background-color:inherit;
+  color:#286CB5;
+}
+
+td {
+  padding-top:25px;
+  border-bottom:solid;
+  border-width:1px;
+}
+
+.ReadingListContainer {
+  
+  padding-bottom:2vh;
+  padding-top:2vh;
+  
+  border:0px;
+  border-bottom:1px;
+  border-style:dashed;
+  border-color:black;
+}
+
+.ReadingListTopMatter {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-column-gap:3vw;
+  color:red;
+  margin-left:1vw;
+  padding-bottom:2vh;
+  text-align:left;
+}
+
+.ReadingListTitle {font-style:italic;}
+
+.ReadingListBtmMatter {
+  margin:1vw;
+}
+
+.MainPageTableStatus { font-family:"Inconsolata", monospace; }
+
+.MainPageTableTitle {
+  font-family:"Inconsolata", monospace;
+  font-weight:700;
+  font-size:25px;
+  width:100%;
+}
+
+.MainPageTableTitle a { 
+  text-decoration:none; 
+  color:#286CB5
+}
+.MainPageTableTitle a:visited {
+  color:#286CB5;
+}
+
+/*
+Text highlighting rules, use with my markdown-->HTML converter
+*/
+.hilite {background-color:rgba(0, 0, 255, 0.10);   color:#46b1ff; font-family:"Inconsolata", monospace;}
+.addit  {background-color:rgba(0, 46, 0, 0.1);     color:#3ba53b; font-family:"Inconsolata", monospace;}
+.remit  {background-color:rgba(62, 0, 0, 0.1);     color:#ff0076; font-family:"Inconsolata", monospace;}
+.chg0   {background-color:rgba(152, 105, 0, 0.20); color:#ffd549; font-family:"Inconsolata", monospace;}
+.chg1   {color:#ff0076;}
+.chg2   {color:#3ba53b;}
+
+.bottomspan { position:fixed; height:100px; width:100%; bottom:0; }
+
+#mkdownConverter {width:100%;height:100%;}
+
+.bookNotesGrid {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  grid-column-gap:1vw;
+  text-align:left;
+}
+
+.bookNotesGrid > div {
+  font-family: "Fira Sans", sans-serif;
+  padding:10px;
+}
+
+.bookNotesGrid > div > p {
+  font-family: "Fira Sans", sans-serif;
+  line-height:normal;
+  margin:0;
+  margin-bottom:15px;
+  text-align:justify;
+}
+
+.bookNotesPage {
+  border-right:black 1px dashed;
+  border-bottom:none;
+  font-style: italic;
+  text-align:left;
+  padding-right:1vw;
+}
+
+.bookNotesContent {
+  border-bottom:none;
+  text-align:justify;
+}
+
+.bookNotesDivision {
+  font-size:25px;
+  padding:10px;
+  font-weight:bold;
+  text-align:center;
+  border-bottom: dashed 1px black;
+  border-top: dashed 1px black;
+}
+
+.preserveSpacing {
+  white-space: pre-line;
+}
+
+.rotateText {
+  transform: rotate(-30deg);
+  font-size:14px;
+  position:absolute;
+  margin-left:-3vw;
+  background:white;
+}

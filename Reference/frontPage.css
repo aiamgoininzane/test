@@ -1,0 +1,23 @@
+#scriptcheck:checked ~ table > tbody > tr.mainpg_review {
+  display:table-row;
+}
+
+#scriptcheck:not(:checked) ~ table > tbody > tr.mainpg_review{
+  display:none;
+}
+
+#notescheck:checked ~ table > tbody > tr.mainpg_notes {
+  display:table-row;
+}
+
+#notescheck:not(:checked) ~ table > tbody > tr.mainpg_notes {
+  display:none;
+}
+
+#othercheck:checked ~ table > tbody > tr.mainpg_misc {
+  display:table-row;
+}
+
+#othercheck:not(:checked) ~ table > tbody > tr.mainpg_misc {
+  display:none;
+}
