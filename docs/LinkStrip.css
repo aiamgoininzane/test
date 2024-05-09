@@ -1,0 +1,7 @@
+/* DOCS PAGES DO NOT REQUIRE LINKSTRIP!! */
+#home .home, #music .music, #design .design, #webdevproject .webdevproject, #tapes .tapes, #tdrc .tdrc, #projects .projects, #videos .videos
+{
+    pointer-events:none;
+    cursor:default;
+    text-decoration:none;
+}

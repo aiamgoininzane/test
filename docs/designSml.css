@@ -1,0 +1,93 @@
+/* Applies to small screens */
+
+/*General font size boost*/
+body { 
+        font-size:4vw;
+}
+
+img.bgOMG {
+    min-height: 100%;
+    min-width: 1024px;
+      
+    width: 100%;
+    height: auto;
+      
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
+  
+  @media screen and (max-width: 1024px) { 
+    img.bgOMG {
+      left: 50%;
+      margin-left: -512px;
+    }
+}
+
+/*Larger font offset with wider column*/
+.PAGE {  
+    max-width:96%; 
+    margin: 0 auto; 
+}
+
+/*Makes the index page script table more readable*/
+td {padding-top:0;}
+.MainPageTableTitle { font-size: 5vw; }
+.MainPageTableStatus  { font-size: 5vw; }
+
+/*Match new page column width*/
+#headerbarFull {
+    width:96%;
+    padding-bottom:20px;
+}
+#bannerimg {
+    margin-bottom:0;
+    font-size:20vw;
+}
+/*Makes formatting prettier on script pages*/
+#headerbarFull > h2 {text-align:left; font-size:5vw;}
+#headerbarFull > h3 {text-align:left; font-size:5vw;}
+
+#blog .ContentCol { word-wrap:anywhere; }
+
+#blog .ContentCol h1 {
+    font-size:7vw;
+}
+#blog .ContentCol h2 {
+    font-size:6vw;
+}
+.respoIf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.biblioNumber { word-wrap:normal; }
+
+/*Makes linkbar fit new overall page scale*/
+.LinkBar a { 
+    font-size: 6vw;
+    color:red;
+    -webkit-transition:none;
+    transition:none;
+}
+.LinkBar a:visited { color:red; }
+.LinkBar a:hover { color:red; }
+
+/*New page width*/
+.ContentCol { 
+    font-size:4vw;
+    width:96%;
+}
+#blog .ContentCol {width:96%;}
+.ContentCol p { 
+    font-size: 4vw; 
+    text-align:justify;
+}
+.ContentCol H2 { padding-left:5px; }
